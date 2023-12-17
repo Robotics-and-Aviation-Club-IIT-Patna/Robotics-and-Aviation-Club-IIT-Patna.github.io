@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(../stuffs/Beyonders.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../stuffs/Montserrat-SemiBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS for navigation Menu */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3027;
+}
+/* #nm::before{
+    content: "";
+    background-color: #2d3027;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .56;
+} */
+
+#navbar #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+}
+
+#navbar #logo img {
+    width: 5em;
+    height: 5em;
+    margin: 4px .7em;
+}
+
+#logo .name h2 {
+    font-family: Beyonders;
+    font-size: .9em;
+    color: #e3d88f;
+}
+
+#logo .name h3 {
+    font-family: Montserrat;
+    font-size: .9em;
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    float: right;
+    flex-wrap: wrap;
+    margin-right: 55px;
+}
+
+#navbar li {
+    margin: 10px 10px;
+    float: right;
+    list-style: none;
+    padding: 3px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: #959793;
+    font-family: Montserrat;
+    font-size: 1em;
+    padding: 1px;
+}
+#navbar a:hover{
+    border-bottom: 3px solid #e3d88f;
+    border-radius: 2px;
+    color: white;
+}
