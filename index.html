@@ -5,7 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RNAsite</title>
+    <link rel="stylesheet" href="css/phone.css">
     <link rel="stylesheet" href="css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @media(min-width: 600px) {
+            .phone {
+                display: none;
+            }
+        }
+        @media(max-width: 599px) {
+            .non-phone {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,14 +31,59 @@
                 <h3>Indian Institute of Technology Patna(IITP)</h3>
             </div>
         </div>
-        <ul>
-            <li class="item"><a href="">Home</a></li>
-            <li class="item"><a href="">Projects</a></li>
-            <li class="item"><a href="">Resources</a></li>
-            <li class="item"><a href="">The Team</a></li>
-            <li class="item"><a href="">About Us</a></li>
-        </ul>
+        <div class="menu non-phone">
+            <ul>
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Projects</a></li>
+                <li class="item"><a href="">Resources</a></li>
+                <li class="item"><a href="">The Team</a></li>
+                <li class="item"><a href="">About Us</a></li>
+            </ul>
+        </div>
     </nav>
+    <nav id="option" class="phone">
+        <input type="checkbox" id="check" class="phone">
+        <div class="btn_menu" class="phone">
+            <label for="check">
+                <i class='bx bx-menu'></i>
+            </label>
+        </div>
+        <div class="menu">
+            <div class="btn_menu_close phone">
+                <label for="check">
+                    <i class='bx bx-x'></i>
+                </label>
+            </div>
+            <ul>
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">Projects</a></li>
+                <li class="item"><a href="">Resources</a></li>
+                <li class="item"><a href="">The Team</a></li>
+                <li class="item"><a href="">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="fake"></div>
+    <div class="sec1">
+        <div class="summary" >
+            <h1>Welcome To <span style="color: #e3d88f;">RnA</span></h1>
+            <div class="content">
+                <p>The Robotics and Drone Aviation Club (RnA Club) of IIT Patna is a student - running organization dedicated to promoting the field of robotics and drone aviation. We aim to provide a platform for students to learn about, develop, and apply Robotics and Drone technology. We also organize various events and workshops to foster innovation and collaboration in this field. In the past few years, our members have won several awards at national and international competitions.</p>
+                <p class="quote">"Where robots take flight and dreams take off."</p>
+            </div>
+            <div class="btns">
+                <button class="tut">
+                    Tutorial <i class='bx bxl-youtube'></i>
+                </button>
+                <button class="idea">
+                    Submit Idea Here <i class='bx bx-archive-out'></i>
+                </button>
+            </div>
+        </div>
+        <div class="drone-anime">
+
+        </div>
+    </div>
 </body>
 
 </html>
