@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Beyonders;
+    src: url(../stuffs/Beyonders.otf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../stuffs/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family: MontserratItalic;
+    src: url(../stuffs/Montserrat-SemiBoldItalic.otf);
+}
+
+
+*{
+    padding: 1rem ;
+    box-sizing: border-box;
+    margin: 0 ;
+    text-align: center;
+    font-family: Montserrat;
+    
+}
+
+hr{
+    width: 40%;
+    border: solid;
+    margin: auto;
+    border-top: 0px;
+    border-left: 0px;
+    color: rgb(45, 48, 39);
+    border-right: 0px;
+    margin-bottom: 2.5rem;
+}
+.build{
+    font-size: 2.5rem;
+    color: rgb(45, 48, 39);
+}
+.build span {
+    padding: 0 ;
+}
+
+/* ---------------------------------------- */
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.container{
+    width: 230px;
+    height: 310px;
+    padding: 0 ;
+    margin: 18px;
+    perspective: 700px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; 
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
+    border-radius: 8px;
+    padding: 0;
+    transition: transform 1500ms;
+    
+    transform-style: preserve-3d;
+}
+
+.front , .back{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden ;
+}
+.front{
+    padding:0;
+    color: rgb(45, 48, 39);
+    background-color: #FFF5C2;
+    
+}
+.back{
+    background-color: rgb(45, 48, 39);
+    color: white;
+    transform: rotateY(180deg);
+}
+.back p {
+    text-align: justify;
+}
+
+.front p {
+    padding :0;
+}
+.back h3 {
+    padding:0
+}
+
+h3 span{
+    padding:0;
+}
+
+.dot{
+    height: 18px ;
+    width: 18px;
+    padding: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+    background-color:#e3d88f;
+}
+
+
+.container:hover > .card{
+    transform: rotateY(180deg);
+}
+
+.name{
+    margin-top: 7px;
+    font-size: large;
+    
+}
+.front img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    height: auto;  /*Change krna hai isko*/
+    margin: 0;
+    padding: 0;  
+}
+.card-content{
+    padding: 0px;
+}
+
+
+
